@@ -45,6 +45,7 @@ Paragraph default: 1.6
 
 html {
 	font-size: 62.5%;
+	overflow-x: hidden;
 }
 
 body {
@@ -52,6 +53,7 @@ body {
 	line-height: 1;
 	font-weight: 400;
 	color: #343a40;
+	overflow-x: hidden;
 }
 
 /* ********************* */
@@ -195,6 +197,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 	background-color: #fdf2e9;
 
 	height: 9.6rem;
