@@ -46,6 +46,8 @@ Paragraph default: 1.6
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
+	/* scroll-behavior: smooth; */
+
 }
 
 body {
@@ -735,11 +737,16 @@ strong {
 /* CTA SECTION */
 /* ********************* */
 
-*:focus {
+/* *:focus {
 	outline: none;
 	outline: 4px dotted #e67e22;
 	outline-offset: 8px;
-}
+} */
+
+*:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  }
 
 
 .section-cta {
@@ -843,9 +850,9 @@ strong {
 
 
 .cta *:focus {
-	outline: 4px dotted white;
-	outline-offset: 4px;
-}
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  }
 
 /* ********************* */
 /* FOOTER */
