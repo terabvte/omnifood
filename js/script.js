@@ -72,6 +72,37 @@ allLinks.forEach(function (link) {
 			headerEl.classList.toggle("nav-open");
 	});
 });
+
+///////////////////////////////////////////////////////////
+// Fixing flexbox gap property missing in some Safari versions
+///////////////////////////////////////////////////////////
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+	function (entries) {
+		const ent = entries[0];
+		if (ent.isIntersecting === false) {
+			console.log(ent);
+			document.querySelector(".header").classList.add("sticky");
+
+			sectionHeroEl.style.marginTop = "9.6rem";
+		}
+		if (ent.isIntersecting) {
+			document.querySelector(".header").classList.remove("sticky");
+			sectionHeroEl.style.marginTop = "";
+
+		}
+	},
+	{
+		// In the viewport
+		root: null,
+		threshold: 0,
+		rootMargin: "-80px"
+	}
+);
+obs.observe(sectionHeroEl);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 ///////////////////////////////////////////////////////////
