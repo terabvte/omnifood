@@ -47,7 +47,6 @@ html {
 	font-size: 62.5%;
 	overflow-x: hidden;
 	/* scroll-behavior: smooth; */
-
 }
 
 body {
@@ -224,6 +223,7 @@ body {
 	color: #333;
 	font-weight: 600;
 	font-size: 1.8rem;
+
 	transition: all 0.3s;
 }
 
@@ -288,7 +288,6 @@ body {
 	background-color: #fdf2e9;
 	padding: 9.6rem 0;
 	padding-top: 4.8rem;
-
 }
 
 .hero {
@@ -761,8 +760,7 @@ strong {
 *:focus {
 	outline: none;
 	box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
-  }
-
+}
 
 .section-cta {
 	padding: 4.8rem 0 12.8rem;
@@ -863,11 +861,10 @@ strong {
 	transition: 0s;
 }
 
-
 .cta *:focus {
 	outline: none;
 	box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
-  }
+}
 
 /* ********************* */
 /* FOOTER */
@@ -945,5 +942,3 @@ strong {
 .grid--footer {
 	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
-
-
