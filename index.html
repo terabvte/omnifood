@@ -11,9 +11,9 @@
 		<title>Omnifood &mdash; Never cook again</title>
 		<link rel="stylesheet" href="styles/style.css" />
 
-		<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
-		<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
-		<link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png" />
+		<link rel="manifest" href="site.webmanifest" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -78,11 +78,15 @@
 					</div>
 
 					<div class="hero-img-box">
-						<img
-							src="img/hero.png"
-							alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-							class="hero-img"
-						/>
+						<picture>
+							<source srcset="img/hero-min.avif" type="image/avif" />
+							<source srcset="img/hero.png" type="image/png" />
+							<img
+								src="img/hero.png"
+								alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+								class="hero-img"
+							/>
+						</picture>
 					</div>
 				</div>
 			</section>
